@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <form>
+            <div class="amount">
+                <label for="amount">Enter Amount</label>
+                <input id="amount" value="1" type="text"/>
+            </div>
+            <div class="dropdown">
+                <div class="from">
+                    <p class="FROM">From</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="USD Flag">
+                        <select name="from" id="from"> </select>
+                    </div>
+                </div>
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                <div class="to">
+                    <p ID="TO">To</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/IN/flat/64.png" alt="INR Flag">
+                        <select name="to" id="to"></select>
+                    </div>
+                </div>
+            </div>
+            <div class="message"> 1 USD ≈ 82 INR </div>
+            <button type="button">Get Exchange Rate</button>
+        </form>
+        <footer id="footer"><a href="http://taqdees.netlify.app/"><p id="taqdis"> Admin : Taqdees Khan</p></a>
+        </footer>
+    </div>
+</body>
+<script src="codes.js"></script>
+<script src="file.js"></script>
+</html>
